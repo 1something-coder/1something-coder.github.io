@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  .hero {
+    height: 300px;
+  }
+  .header-content h1 {
+    font-size: 2.5em;
+  }
+  .header-content p {
+    font-size: 1em;
+  }
+  .main-nav ul {
+    flex-wrap: wrap; /* Menu xuống hàng trên di động */
+  }
+  .main-nav li {
+    width: 50%; /* Mỗi item chiếm 50% */
+  }
+  .main-nav li a {
+    justify-content: center; /* Căn giữa nội dung menu */
+    border-bottom: none; /* Bỏ gạch chân dưới */
+  }
+  .main-nav li a:hover {
+    border-bottom-color: transparent;
+  }
+  .three-columns {
+    flex-direction: column; /* Chuyển sang xếp chồng trên di động */
+  }
+  .projects-grid,
+  .certs-grid {
+    grid-template-columns: 1fr; /* 1 cột trên di động */
+  }
+}
